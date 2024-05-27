@@ -1,0 +1,13 @@
+name: "Go Container Action"
+description: "Get started with Go Container actions"
+author: "eamonnk418"
+inputs:
+  myInput:
+    description: "Input to use"
+    default: "world"
+outputs:
+  myOutput:
+    description: "Output from the action"
+runs:
+  using: "docker"
+  image: "Dockerfile"

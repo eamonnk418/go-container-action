@@ -1,0 +1,9 @@
+name: My Workflow
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: eamonnk418/go-container-action@main
+      with:
+        myInput: world
